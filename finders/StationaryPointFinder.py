@@ -1,4 +1,4 @@
-from ValueFinder import ValueFinder
+from Lumberjack.finders.ValueFinder import ValueFinder
 
 class StationaryPointFinder(ValueFinder):
 
@@ -14,7 +14,7 @@ class StationaryPointFinder(ValueFinder):
             for line in reversed(lines):
                 twolines = line.strip()+subsequent_line.strip()
                 #print(twolines)
-                if "stationary point found" in twolines:
+                if "Stationary point found" in twolines:
                     found=True
                 subsequent_line=line
 
